@@ -22,11 +22,11 @@ def show_disk_data(page: ft.Page):
     page.update()
 
     c_disk_data = int(psutil.disk_usage('C:\\').percent)
-    d_disk_data = int(psutil.disk_usage('E:\\').percent)
-    e_disk_data = int(psutil.disk_usage('F:\\').percent)
-    f_disk_data = int(psutil.disk_usage('G:\\').percent)
+    d_disk_data = int(psutil.disk_usage('D:\\').percent)
+    e_disk_data = int(psutil.disk_usage('E:\\').percent)
+    f_disk_data = int(psutil.disk_usage('F:\\').percent)
 
-    disk_percent_value = Text('', size=20, width=ft.FontWeight.BOLD, )
+    # disk_percent_value = Text('', size=20, width=ft.FontWeight.BOLD, )
     page.add(
         ft.Column(
             controls=[
@@ -117,7 +117,6 @@ def show_disk_data(page: ft.Page):
 
                         ft.CircleAvatar(bgcolor="#FF5733", radius=5),
                         Text('Usage', size=10, width=ft.FontWeight.BOLD, color="#FF5733"),
-
                     ],
                     alignment=ft.MainAxisAlignment.CENTER,
                     vertical_alignment=ft.CrossAxisAlignment.CENTER,
