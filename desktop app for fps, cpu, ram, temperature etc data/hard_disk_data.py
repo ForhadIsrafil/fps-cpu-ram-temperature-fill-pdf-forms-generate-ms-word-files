@@ -1,10 +1,9 @@
 import flet as ft
 import psutil
 import time
-import math
 from flet import Text, Column, Row
 import flet.canvas as cv
-import math
+
 
 
 def pg(value):
@@ -13,7 +12,6 @@ def pg(value):
     pr.bgcolor = "#96DED1"
     pr.value = value
     return pr
-
 
 def show_disk_data(page: ft.Page):
     page.window_width = 800
