@@ -30,7 +30,7 @@ def show_gpu_data(page: ft.Page):
     fan_obj = ft.Container(
         width=150,
         height=150,
-        content=ft.Image(src=f"images/fan.png", fit=ft.ImageFit.CONTAIN, color="#77B0AA"),
+        content=ft.Image(src=f"/images/fan.png", fit=ft.ImageFit.CONTAIN, color="#77B0AA"),
         rotate=ft.transform.Rotate(0, alignment=ft.alignment.center),
         animate_rotation=ft.animation.Animation(0, ft.AnimationCurve.LINEAR)
     )

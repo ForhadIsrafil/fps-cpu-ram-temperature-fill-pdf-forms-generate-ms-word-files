@@ -41,13 +41,12 @@ def home(page: ft.Page):
     page.window_resizable = False
     page.update()
 
-
     cpu_button = ft.TextButton(
         style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=2), bgcolor="#56666B"),
         content=ft.Container(
             content=ft.Column(
                 [
-                    ft.Image(src="images/cpu-tower.png", height=70, width=70),
+                    ft.Image(src="/images/cpu-tower.png", height=70, width=70),
                     ft.Text(value="CPU", size=15, color="#e2eff1"),
                 ],
                 alignment=ft.MainAxisAlignment.CENTER,
@@ -64,7 +63,7 @@ def home(page: ft.Page):
         content=ft.Container(
             content=ft.Column(
                 [
-                    ft.Image(src="images/storage.png", height=70, width=70),
+                    ft.Image(src="/images/storage.png", height=70, width=70),
                     ft.Text(value="Hard Disk", size=15, color="#e2eff1"),
                 ],
                 alignment=ft.MainAxisAlignment.CENTER,
@@ -80,7 +79,7 @@ def home(page: ft.Page):
         content=ft.Container(
             content=ft.Column(
                 [
-                    ft.Image(src="images/ram.png", height=70, width=70),
+                    ft.Image(src="/images/ram.png", height=70, width=70),
                     ft.Text(value="RAM", size=15, color="#e2eff1"),
                 ],
                 alignment=ft.MainAxisAlignment.CENTER,
@@ -95,7 +94,7 @@ def home(page: ft.Page):
         content=ft.Container(
             content=ft.Column(
                 [
-                    ft.Image(src="images/graphic-card.png", height=70, width=70),
+                    ft.Image(src="/images/graphic-card.png", height=70, width=70),
                     ft.Text(value="GPU", size=15, color="#e2eff1"),
                 ],
                 alignment=ft.MainAxisAlignment.CENTER,
@@ -124,5 +123,6 @@ def home(page: ft.Page):
     )
 
 
+ft.app(target=home, assets_dir='assets')
 
-ft.app(target=home)
+# "flet pack home.py --add-data "assets;assets" --icon assets/storage.png"
