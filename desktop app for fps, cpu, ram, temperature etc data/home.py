@@ -121,7 +121,8 @@ def home(page: ft.Page):
         ft.Divider(),
         container,
     )
-
+    container.content = gpu_data.show_gpu_data(page)
+    page.update()
 
 ft.app(target=home, assets_dir='assets')
 
