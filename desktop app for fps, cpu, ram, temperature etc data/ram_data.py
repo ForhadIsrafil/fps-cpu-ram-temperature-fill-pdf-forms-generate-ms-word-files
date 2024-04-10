@@ -8,10 +8,10 @@ from flet import Text, Column, Row
 
 def show_ram_data(page: ft.Page):
 
-    page.window_width = 800
-    page.window_height = 500
-    page.window_resizable = False
-    page.update()
+    # page.window_width = 800
+    # page.window_height = 500
+    # page.window_resizable = False
+    # page.update()
 
     pr = ft.ProgressRing(width=200, height=200, stroke_width=20)
     pr.color = "#FF5733"
@@ -46,11 +46,11 @@ def show_ram_data(page: ft.Page):
     )
     while True:
         ram_data = int(psutil.virtual_memory().percent)
-        print(ram_data)
+        # print(ram_data)
         time.sleep(1)
         pr.value = ram_data * 0.01
         ram_percent_value.value = ram_data
         page.update()
 
 
-ft.app(target=show_ram_data)
+# ft.app(target=show_ram_data)

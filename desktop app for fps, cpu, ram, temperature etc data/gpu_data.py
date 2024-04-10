@@ -12,11 +12,11 @@ def pg(value):
     return pr
 
 
-def show_disk_data(page: ft.Page):
-    page.window_width = 800
-    page.window_height = 500
-    page.window_resizable = False
-    page.update()
+def show_gpu_data(page: ft.Page):
+    # page.window_width = 800
+    # page.window_height = 500
+    # page.window_resizable = False
+    # page.update()
 
     # progress value
     utilization_pg = pg(0)
@@ -123,4 +123,4 @@ def show_disk_data(page: ft.Page):
             page.update()
 
 
-ft.app(target=show_disk_data)
+# ft.app(target=show_gpu_data)

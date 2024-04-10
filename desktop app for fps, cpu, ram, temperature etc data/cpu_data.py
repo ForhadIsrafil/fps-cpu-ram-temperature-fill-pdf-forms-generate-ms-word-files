@@ -7,11 +7,11 @@ from flet import Text, Column, Row
 
 
 def show_cpu_data(page: ft.Page):
-
-    page.window_width = 800
-    page.window_height = 500
-    page.window_resizable = False
-    page.update()
+    #
+    # page.window_width = 800
+    # page.window_height = 500
+    # page.window_resizable = False
+    # page.update()
 
     pr = ft.ProgressRing(width=200, height=200, stroke_width=20)
     pr.color = "#FF5733"
@@ -46,11 +46,12 @@ def show_cpu_data(page: ft.Page):
     )
     while True:
         cpu_data = int(psutil.cpu_percent())
-        print(cpu_data)
+        # print(cpu_data)
         time.sleep(1)
         pr.value = cpu_data * 0.01
         cpu_percent_value.value = cpu_data
         page.update()
 
-
-ft.app(target=show_cpu_data)
+# def cpu_data():
+#     return show_cpu_data(ft.Page())
+# ft.app(target=show_cpu_data)

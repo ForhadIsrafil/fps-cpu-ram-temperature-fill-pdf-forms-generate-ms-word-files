@@ -14,10 +14,10 @@ def pg(value):
     return pr
 
 def show_disk_data(page: ft.Page):
-    page.window_width = 800
-    page.window_height = 500
-    page.window_resizable = False
-    page.update()
+    # page.window_width = 800
+    # page.window_height = 500
+    # page.window_resizable = False
+    # page.update()
 
     c_disk_data = int(psutil.disk_usage('C:\\').percent)
     d_disk_data = int(psutil.disk_usage('D:\\').percent)
@@ -131,4 +131,4 @@ def show_disk_data(page: ft.Page):
     page.update()
 
 
-ft.app(target=show_disk_data)
+# ft.app(target=show_disk_data)
