@@ -126,4 +126,4 @@ def home(page: ft.Page):
 
 ft.app(target=home, assets_dir='assets')
 
-# "flet pack home.py --add-data "assets;assets" --icon assets/storage.png"
+# "flet pack home.py --add-data "assets;assets" --icon assets/images/storage.png"
