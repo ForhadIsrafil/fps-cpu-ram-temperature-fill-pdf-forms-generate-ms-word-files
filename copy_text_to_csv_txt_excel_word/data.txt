@@ -1,0 +1,13 @@
+old_d = ''
+while True:
+d = ahk.get_clipboard()
+d = ahk.get_clipboard()
+
+
+Upgrade Your Business
+3 steps to become a top seller on Fiverr
+Get noticed
+
+Help & Support
+https://help.fiverr.com/hc/en-us
+H:\People don’t pay you for how hard you work. They pay you to solve a problem..png
