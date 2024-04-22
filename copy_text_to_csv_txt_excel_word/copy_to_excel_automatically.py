@@ -7,9 +7,10 @@ ahk = AHK(directives=[NoTrayIcon])
 ahk.set_clipboard("")
 
 
-def copy_txt_file(value):
-    with open("data.txt", 'a', encoding='utf-8') as f:
-        f.write(value + '\n')
+def copy_excel_file(value):
+    df = pd.read_excel("data.xlsx")
+    df.loc[len(df.index)] = [value.strip()]
+    df.to_excel("data.xlsx", index=False)
 
 
 old_d = ''
@@ -20,9 +21,7 @@ while True:
         if d.strip() != "":
             if old_d != d:
                 print(d)
-                # with open("data.txt", 'a', encoding='utf-8') as f:
-                #     f.write(d + '\n')
-                copy_txt_file(d)
+                copy_excel_file(d)
                 old_d = d
     time.sleep(0.5)
 
