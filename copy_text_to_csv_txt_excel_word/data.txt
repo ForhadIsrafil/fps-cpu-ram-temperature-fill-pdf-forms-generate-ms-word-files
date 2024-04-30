@@ -1,13 +1,7 @@
-old_d = ''
-while True:
-d = ahk.get_clipboard()
-d = ahk.get_clipboard()
 
+Get noticed
+Hone your skills and expand your knowledge with online courses. You’ll be able to offer more services and gain more exposure with every course completed.
+Become a successful seller!
 
-Upgrade Your Business
-3 steps to become a top seller on Fiverr
-Get noticed
+3 steps to become a top seller on Fiverr
 
-Help & Support
-https://help.fiverr.com/hc/en-us
-H:\People don’t pay you for how hard you work. They pay you to solve a problem..png
